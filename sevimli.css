@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Elementlarning o'lchami aniq bo'lishi uchun */
+}
+
+.container {
+  position: relative;
+}
+.backImg {
+  position: absolute;
+  width: 120px;
+  top: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.gallery {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.imgDiv {
+  position: relative;
+  width: calc(100% / 4); 
+  height: 300px;
+  object-fit: cover; 
+}
+.like_img {
+  width: 100%;
+  height: 100%;
+  border: none; 
+}
+
+.redLike {
+  width: 35px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+}
