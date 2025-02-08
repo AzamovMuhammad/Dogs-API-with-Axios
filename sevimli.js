@@ -8,7 +8,7 @@ function showImgs() {
     gallery.innerHTML += `
         <div class="imgDiv" id="imgDiv-${index}">
             <img src="${rasm}" alt="rasm" class="like_img">
-            <img src="img/favorite.png" onclick="deleteImg(${index})" alt="" class="redLike">
+            <div onclick="deleteImg(${index})" class="redLike"></div>
         </div>
         `;
   });

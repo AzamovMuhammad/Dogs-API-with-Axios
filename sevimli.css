@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Elementlarning o'lchami aniq bo'lishi uchun */
+  box-sizing: border-box; 
 }
 
 .container {
@@ -38,8 +38,17 @@
 
 .redLike {
   width: 35px;
+  height: 35px;
   position: absolute;
   top: 5px;
   right: 5px;
   cursor: pointer;
+  background-image: url(img/favorite.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.4s ease-in-out;
+}
+.redLike:hover{
+    background-image: url(img/broken-heart.png);
 }
