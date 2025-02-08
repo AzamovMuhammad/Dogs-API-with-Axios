@@ -1,7 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -26,14 +27,14 @@
 
 .imgDiv {
   position: relative;
-  width: calc(100% / 4); 
+  width: calc(100% / 4);
   height: 300px;
-  object-fit: cover; 
+  object-fit: cover;
 }
 .like_img {
   width: 100%;
   height: 100%;
-  border: none; 
+  border: none;
 }
 
 .redLike {
@@ -49,6 +50,15 @@
   background-size: contain;
   transition: all 0.4s ease-in-out;
 }
-.redLike:hover{
-    background-image: url(img/broken-heart.png);
+.redLike:hover {
+  background-image: url(img/broken-heart.png);
+}
+.noImgText {
+  width: 100%;
+  height: 100vh;
+  font-size: 44px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -4,6 +4,11 @@ const redLike = document.querySelector(".redLike");
 
 function showImgs() {
   gallery.innerHTML = " ";
+  if (!liked_img || liked_img.length === 0) {
+    gallery.innerHTML = "<p class='noImgText' >You do not have any favourite images yet.</p>";
+    return;
+  }
+
   liked_img.map((rasm, index) => {
     gallery.innerHTML += `
         <div class="imgDiv" id="imgDiv-${index}">
