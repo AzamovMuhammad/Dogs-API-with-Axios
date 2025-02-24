@@ -2,7 +2,7 @@ const img = document.getElementById("img");
 const error = document.getElementById("error");
 const like_img = document.querySelector(".like_img");
 const btnBlack = document.querySelector(".btnBlack");
-const liked_img = JSON.parse(localStorage.getItem('likedImg'));
+const liked_img = JSON.parse(localStorage.getItem("likedImg"));
 
 let intervalId;
 function showDog() {
@@ -41,7 +41,7 @@ function changeLikeColor() {
 function goToLike() {
   window.location.href = "sevimli.html";
   showIt();
-  stopShowDog()
+  stopShowDog();
 }
 
 showDog();
